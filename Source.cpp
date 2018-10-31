@@ -15,7 +15,7 @@ using namespace std;
 double integrate(int n) {
 
 	// rng
-	default_random_engine generator;
+	default_random_engine rng;
 
 	// range of values to be generated
 	uniform_real_distribution<double> distribution(0.0, 1.0);
@@ -24,7 +24,7 @@ double integrate(int n) {
 	
 	// find sum of the values of the samples
 	for (int i = 0; i < n; ++i)
-		sum += pow(cos(distribution(generator)), 2);
+		sum += pow(cos(distribution(rng)), 2);
 
 	// return average value
 	return sum / n;
