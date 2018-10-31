@@ -1,6 +1,7 @@
-/* Calculates the integral of f(x) = cos^2(x) using Monte Carlo
-   Method, which uses random sampling within a range to find
-   average values. To change the integrand, modify LINE 27 */
+/* Calculates the integral from x=0 to x=1 of f(x) = cos^2(x) using Monte
+   Carlo Method, which uses random sampling within a range to find
+   average values. To change the range of integration, modify LINE 21. To
+   change the integrand, modify LINE 27 */
 
 #include <random>
 #include <iostream>
