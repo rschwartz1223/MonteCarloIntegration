@@ -11,7 +11,6 @@ using namespace std;
 /* calculate the integral of function defined in this body
    @param n amount of samples 
    @return sum/n average value of all samples */
-
 double integrate(int n) {
 
 	// rng
