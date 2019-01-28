@@ -37,16 +37,16 @@ double golden_ratio_integrate(int n)
 int main()
 {
   // samples variable
-	int n;
-	std::cout << "Enter the amount of samples you wish to calculate (3 = 10^3): ";
-	std::cin >> n;
+  int n;
+  std::cout << "Enter the amount of samples you wish to calculate (3 = 10^3): ";
+  std::cin >> n;
 
   // display output done from 10^i samples, where i = n
   std::cout << "\nSampling using the Golden Ratio" << std::endl;
-	for(int i = 0; i <= n; ++i)
-    std::cout << pow(10, i) << " samples: " << golden_ratio_integrate(pow(10, i)) << std::endl;
+  for(int i = 0; i <= n; ++i)
+    	std::cout << pow(10, i) << " samples: " << golden_ratio_integrate(pow(10, i)) << std::endl;
 
-	system("PAUSE");
-	return 0;
+  system("PAUSE");
+  return 0;
 
 }
